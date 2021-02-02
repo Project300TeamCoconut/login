@@ -69,7 +69,7 @@
         android:layout_height="wrap_content"
         android:clickable="true"
         android:onClick="doSingin"
-        android:text="@string/logIn"
+        android:text="LOGIN"
         android:textColor="#FFFFFF"
         android:textSize="24sp"
         android:textStyle="bold"
