@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FDFDFD"
+    android:backgroundTint="#000000"
+
+    tools:context=".signup">
+
+    <ImageView
+        android:id="@+id/imgBlack"
+        android:layout_width="410dp"
+        android:layout_height="416dp"
+        android:contentDescription="TODO"
+        app:srcCompat="@drawable/movie1"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-28dp"
+        tools:layout_editor_absoluteY="-3dp" />
+
+    <Button
+        android:id="@+id/btnSingup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="doSingin"
+        android:text="signup"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.632"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etPassword"
+        app:layout_constraintVertical_bias="0.057" />
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="245dp"
+        android:layout_height="0dp"
+        android:backgroundTint="#FFFFFF"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColor="#F3EDED"
+        android:textColorHint="#B3B3B3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.676"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etEmail" />
+
+    <EditText
+        android:id="@+id/etUserName"
+        android:layout_width="245dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="88dp"
+        android:backgroundTint="#FFFFFF"
+        android:ems="10"
+        android:hint="User Name"
+        android:inputType="textEmailAddress"
+        android:textColor="#F3EDED"
+        android:textColorHint="#B3B3B3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.676"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:onClick="doSingin"
+        android:text="@string/logIn"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.955"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.042"
+        tools:text="LOGIN" />
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="245dp"
+        android:layout_height="0dp"
+        android:backgroundTint="#FFFFFF"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:textColor="#F3EDED"
+        android:textColorHint="#B3B3B3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.676"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etUserName" />
+</androidx.constraintlayout.widget.ConstraintLayout>
